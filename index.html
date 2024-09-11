@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Create Your Character</h1>
+
+    <form id="character-form">
+        <label for="name">Character Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter character name" required>
+
+        <label for="race">Race:</label>
+        <select id="race" name="race">
+            <option value="human">Human</option>
+            <option value="elf">Elf</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="halfling">Halfling</option>
+        </select>
+
+        <label for="class">Class:</label>
+        <select id="class" name="class">
+            <option value="fighter">Fighter</option>
+            <option value="wizard">Wizard</option>
+            <option value="rogue">Rogue</option>
+            <option value="cleric">Cleric</option>
+        </select>
+
+        <button type="button" id="roll-stats">Roll Stats</button>
+
+        <div id="stats">
+            <h3>Your Stats</h3>
+            <p>Strength: <span id="strength"></span></p>
+            <p>Dexterity: <span id="dexterity"></span></p>
+            <p>Constitution: <span id="constitution"></span></p>
+            <p>Intelligence: <span id="intelligence"></span></p>
+            <p>Wisdom: <span id="wisdom"></span></p>
+            <p>Charisma: <span id="charisma"></span></p>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
